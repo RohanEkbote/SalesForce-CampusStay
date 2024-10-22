@@ -11,18 +11,6 @@ CampusStay is a robust CRM solution built on the Salesforce platform. It enables
 🔄 Dynamic Flow for Students: Guides students through the booking process, with automated validation for cot availability.
 🏢 Hostel Manager Control: Real-time updates on cot availability and booking status.
 
-📑 Project Structure
-CampusStay-Project/
-│
-├── README.md                # Project description
-├── src/
-│   ├── objects/             # Salesforce objects (College, Hostel, Booking, Payment)
-│   ├── classes/             # Apex classes for business logic
-│   ├── triggers/            # Trigger files to manage validations
-│   └── flows/               # Visual flows for booking process
-├── screenshots/             # Project screenshots
-└── docs/                    # Documentation files
-
 💡 Technologies Used
 
 This project leverages Salesforce's powerful suite of tools and technologies:
