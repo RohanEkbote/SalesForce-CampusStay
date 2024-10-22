@@ -1,6 +1,6 @@
 ![campusstay-high-resolution-logo-black](https://github.com/user-attachments/assets/dec780dd-1d9e-4092-ad2c-d0edf6d76a38)
 
-🌟 CampusStay: Simplifying Hostel Booking in Salesforce 🌟
+🌟 CampusStay: A Salesforce CRM solution for seamless on-campus hostel booking and management, enabling students to book cots and hostel managers to track availability.🌟
 Welcome to CampusStay, a custom Salesforce CRM application designed to streamline the hostel booking experience for students. This project empowers colleges to manage on-campus accommodations efficiently and ensures a smooth booking process for students.
 
 🚀 Project Overview
