@@ -48,7 +48,7 @@ Real-Time Validation: Prevent overbooking by checking cot availability dynamical
 🧩 How to Use This Project
 To use this project, follow these steps:
 
-Clone the Repository: git clone https://github.com/RohanEkbote/CampusStay-Project.git
+Clone the Repository: git clone (https://github.com/RohanEkbote/CampusStay)
 Deploy to Salesforce: Use Salesforce's deployment tools to deploy this project to your Developer Edition.
 Import Data: Set up sample data for colleges, hostels, and students.
 Run the Flow: Test the booking process by running the flow from the Salesforce App.
