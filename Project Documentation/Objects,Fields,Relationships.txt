@@ -1,0 +1,67 @@
+Here's a detailed list of all the objects you've created for the CampusStay project along with their fields, data types, and relationships.
+
+1. College
+2. Hostel/PG
+3. Booking 
+4. Payment
+
+1. College (Custom Object)
+
+1.1 College Name : The name of the college (e.g., DYP).
+1.2 Location (Text): The physical location of the college.
+
+Relationships:
+One-to-Many: A college can have multiple hostels.
+
+2. Hostel/PG (Custom Object)
+
+2.1 Hostel/PG Name : The name of the hostel (e.g., Boys Hostel or Girls Hostel).
+2.2 College (Lookup to College): Links the hostel to a specific college.
+2.3 Total Cots (Number): The total number of cots available in the hostel.
+2.4 Available Cots (Formula, Number): Calculated as Total Cots__c - Booked Cots__c. Shows how many cots are still available for booking.
+2.5 Cost per Cot (Currency): The price per cot for booking.
+2.6 Booked Cots (Roll-Up Summary, Number): Automatically sums the total booked cots from related Booking records. This prevents overbooking.
+2.7 Manager Name (Text): The manager responsible for the hostel.
+2.8 Hostel Address (Text): The address or location of the hostel.
+
+Relationships:
+One-to-Many: Each hostel is linked to a college, and it can have multiple bookings.
+
+3. Booking (Custom Object)
+
+3.1 Booking Name
+3.2 Student Name
+3.3 College (Lookup to College): The selected college for the booking.
+3.4 Hostel Type (Picklist): Two options - Boys Hostel and Girls Hostel.
+3.5 Hostel (Lookup to Hostel/PG): Automatically filled based on the selected hostel type.
+3.6 Cots Booked (Number): The number of cots the student wants to book.
+3.7 Total Cost (Formula, Currency): Booked Cots__c * Hostel.Cost per Cot__c. Calculates the total cost based on the number of cots booked.
+3.8 Booking Date (Date): The date when the booking is made.
+3.9 Arrival Date (Date): The date the student plans to arrive at the hostel.
+3.10 Departure Date (Date): The date the student plans to vacate the hostel.
+3.11 Room Preferences (Long Text Area): Any specific requests (e.g., cot near a window, first floor).
+
+Relationships:
+Many-to-One: Each booking links to a hostel and student.
+Roll-Up Summary in Hostel object for managing cot availability.
+
+4. Payment (Custom Object)
+
+4.1 Payment Name
+4.2 Booking (Lookup to Booking): Links the payment to the booking.
+4.3 Student Name (Formula, Text from Booking): Auto-filled from the booking’s Student Name.
+4.4 Total Amount (Formula, Currency): Same as Total Cost from the Booking object.
+4.5 Payment Date (Date): The date when the payment is made.
+4.6 Status (Picklist): Status options like "Pending", "Paid", etc.
+
+Relationships:
+One-to-One: Each payment is linked to one booking.
+The total amount is calculated based on the booking.
+
+### Overall Relationships Overview of Objects:
+
+1) College ↔ Hostel/PG (One-to-Many): A college has multiple hostels (Boys and Girls).
+2) Hostel/PG ↔ Booking (One-to-Many): A hostel has multiple bookings, but the availability of cots is managed through the roll-up summary on Hostel/PG.
+3) Booking ↔ Payment (One-to-One): Each booking has one associated payment.
+
+
