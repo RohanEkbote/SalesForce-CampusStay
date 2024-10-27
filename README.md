@@ -1,3 +1,6 @@
+VIDEO EXPLANATION (Google Drive Links) -CampusStay Video, CampusStay-VideoExplaination
+https://drive.google.com/drive/folders/1qpu5kEea_OJo4MyXwbjomRqe4sgqkmZX
+
 ![campusstay-high-resolution-logo-black](https://github.com/user-attachments/assets/dec780dd-1d9e-4092-ad2c-d0edf6d76a38)
 
 🌟 CampusStay: A Salesforce CRM solution for seamless on-campus hostel booking and management, enabling students to book cots and hostel managers to track availability.🌟
