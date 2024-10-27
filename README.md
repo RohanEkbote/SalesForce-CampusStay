@@ -1,5 +1,4 @@
-VIDEO EXPLANATION (Google Drive Links) -CampusStay Video, CampusStay-VideoExplaination
-https://drive.google.com/drive/folders/1qpu5kEea_OJo4MyXwbjomRqe4sgqkmZX
+VIDEO EXPLANATION (Google Drive Link) - https://drive.google.com/drive/folders/1qpu5kEea_OJo4MyXwbjomRqe4sgqkmZX
 
 ![campusstay-high-resolution-logo-black](https://github.com/user-attachments/assets/dec780dd-1d9e-4092-ad2c-d0edf6d76a38)
 
